@@ -35,7 +35,7 @@ import junit.framework.TestCase;
  *
  */
 public class MessageTest extends TestCase {
-    private String testUrl = "http://127.0.0.1:8080/rest/message";
+    private String testUrl = "http://127.0.0.1:8080/message";
 
     @Test
     public void testUtilHello() throws URISyntaxException, JSONException {
