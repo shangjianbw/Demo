@@ -28,13 +28,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class JSONEncoder implements Encoder {
-    
-    /**
-     *@constructor 构造方法
-     */
-    public JSONEncoder() {
-        System.out.println("JSONEncoder");
-    }
     /**
      *@name    中文名称
      *@description 相关说明

@@ -30,12 +30,6 @@ import com.bw.demo.vo.MessageDTO;
 @Component
 public class MessageServiceImpl implements MessageService {
     /**
-     *@constructor 构造方法
-     */
-    public MessageServiceImpl() {
-        System.out.println("MessageServiceImpl INIT");
-    }
-    /**
      *@name    中文名称
      *@description 相关说明
      *@time    创建时间:2015年12月10日下午10:11:02
