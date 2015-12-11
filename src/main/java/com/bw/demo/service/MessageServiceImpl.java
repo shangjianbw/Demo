@@ -43,7 +43,7 @@ public class MessageServiceImpl implements MessageService {
         messageVo.setId(UUID.randomUUID().toString());
         messageVo.setUser(inVo.getUser());
         messageVo.setMessage(inVo.getMessage());
-        SimpleDateFormat sdf =   new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
+        SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
         messageVo.setPostedAt(sdf.format(new Date()));
         return messageVo;
     }
