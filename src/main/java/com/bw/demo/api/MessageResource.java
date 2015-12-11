@@ -33,7 +33,7 @@ import com.bw.demo.vo.MessageDTO;
  */
 @Component
 @Path("/")
-public class MessageResource extends BaseResource {
+public class MessageResource {
     @Autowired
     private MessageService messageService;
 
@@ -49,7 +49,7 @@ public class MessageResource extends BaseResource {
     @POST
     @Consumes( MediaType.APPLICATION_JSON )  
     @Produces( MediaType.APPLICATION_JSON )
-    public String sayMessage(MessageDTO message) {
-        return this.convertReturn(this.messageService.getMessage(message));
+    public MessageDTO sayMessage(MessageDTO message) {
+        return this.messageService.getMessage(message);
     }
 }
