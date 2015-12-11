@@ -40,15 +40,14 @@ public class MessageTest extends TestCase {
     @Test
     public void testUtilHello() throws URISyntaxException, JSONException {
         JSONObject param = new JSONObject();
-        param.put("user", "foo");
-        param.put("message", "bar");
+        param.put("user", "foo1");
+        param.put("message", "bar2");
         URI url = new URI(testUrl);  
         Client client = Client.create();  
         WebResource resource = client.resource(url);  
         ClientResponse response = resource.type(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
                 .post(ClientResponse.class, param.toString());
-        System.out.println(response.getStatus());
         System.out.println("result : " + response.getEntity(String.class));
     }
 }
